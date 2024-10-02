@@ -35,12 +35,13 @@ key:""
     url: "/linuxDedicated",
     key:""
   },
-  {
-    title: "HP Servers",
-    url: "/",
-    key:""
-  },
 ];
+
+// {
+//   title: "HP Servers",
+//   url: "/",
+//   key:""
+// },
 
 const backupLinks = [
   {
@@ -165,7 +166,7 @@ const Navbar = () => {
 
           >
             {serverLinks.map((link) => (
-              <Link href={link.url} onClick={handleCloseBackup}><MenuItem >{link.title}</MenuItem></Link>
+              <Link href={link.url} onClick={handleCloseBackup}  sx={{color : "black", textDecoration:"none"}}><MenuItem >{link.title}</MenuItem></Link>
             ))}
           </Menu>
         </div>
@@ -196,7 +197,7 @@ const Navbar = () => {
 
           >
             {backupLinks.map((link) => (
-              <Link href={link.url}><MenuItem onClick={handleCloseBackup}>{link.title}</MenuItem></Link>
+              <Link href={link.url}><MenuItem onClick={handleCloseBackup}  sx={{color : "black", textDecoration:"none"}}>{link.title}</MenuItem></Link>
             ))}
           </Menu>
         </div>

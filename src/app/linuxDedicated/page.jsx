@@ -40,18 +40,25 @@ Our Windows Dedicated Hosting is served with solid performance which is perfect 
           Ready to make your dream of a mechanized India a reality? Our totally managed Linux VPS Server is designed to provide you with the best show and versatility, all while holding your monetary arrangement under close restrictions. With our on-demand support and 24/7 checking, you can trust us to manage all your web hosting necessities and assurance that your business moves along true to form. Contact us today and get ready to get the advantages of achievement!
           </p>
           <div className="row">
-            <div className="col-6 border border-3 p-3">
+            <div className="col-6 ">
+              <div className="border border-3 m-3 p-2">
+
+
               <h5>Reliable Linux Hosting Solutions</h5>
               <p>
               Get reliable Linux hosting solutions with maximum uptime and high performance. Our packages are designed to meet the needs of any business, from small websites to large enterprise applications. With top-notch security, scalability, and storage options, we make sure your business runs smoothly.
               </p>
             </div>
-            <div className="col-6 border border-3 p-3">
+              </div>
+            <div className="col-6 ">
+              <div className="border border-3 m-3 p-2">
+
               <h5>24/7 Technical Support</h5>
               <p>
               Get technical support any time, day or night. Our team of highly trained technical experts is available 24/7 to assist you with any requests or issues you may have. We provide quality and solid support to help your business move forward as planned.
               </p>
             </div>
+              </div>
             <div className="">
               <h1>Benefits</h1>
               <div className="row">
@@ -73,16 +80,6 @@ Our Windows Dedicated Hosting is served with solid performance which is perfect 
                     Our live chat tech support team makes sure that your managed
                     cloud and dedicated server never face any downtime and serve
                     the quick solutions on live chat.
-                  </p>
-                </div>
-                <div className="col-lg-12 col-sm-6 col-12 mt-50">
-                  <h4 className="text-heading-6 icon-leaf">
-                    Phone Support 24/7/365
-                  </h4>
-                  <p className="text-body-excerpt color-gray-600 mt-15">
-                    We have unlimited free call support for our clients who want
-                    our support for troubleshooting the managed cloud server
-                    errors. We are ready to serve you in the way you want.
                   </p>
                 </div>
               </div>
