@@ -1,4 +1,4 @@
-.container {
+.container0 {
   display: flex;
   align-items: center;
   gap: 100px;
@@ -16,6 +16,7 @@
   background: linear-gradient(to bottom, #194c33, #bbb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* color: #fff; */
 }
 
 .img {
@@ -39,4 +40,36 @@
   font-size: 24px;
   font-weight: 300;
 }
+
+.desc1{
+  /* font-size: 24px; */
+  /* font-weight: 300; */
+  text-align: center;
+  padding: 5px;
+}
+
+.container1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  /* height: 450px; */
+}
+
+
+.btn{
+  padding: 10px; 
+    font-size: 20px; 
+    font-weight: 700; 
+    color: rgb(5, 14, 5); 
+    border: none; 
+    /* border-radius: 30px;  */
+    background-color: rgb(182, 215, 182); 
+    margin-top: 20px; 
+}
+/* 
+.custom{
+  display: flex;
+} */
 
