@@ -6,7 +6,7 @@ export default function LinuxVps() {
   return (
     <div>
       <div className="row">
-        <div className="col-6 pt-5 mt-3">
+        <div className="col-12 col-sm-12 col-md-6 pt-5 my-3 text-center text-md-start">
           <h1>Linux VPS Hosting in India</h1>
           <p>
             Get the best managed vps hosting for website hosting in India with
@@ -17,7 +17,7 @@ export default function LinuxVps() {
             without worrying about server maintenance.
           </p>
         </div>
-        <div className="col-6">
+        <div className="col-12 col-sm-12 col-md-6 my-3">
           <Image
             src={linuxVps}
             alt="linux vps image"
@@ -28,27 +28,27 @@ export default function LinuxVps() {
       </div>
       <div className="text-center row">
         <h3 className="mt-5">What We Focus on</h3>
-        <h5 className="col-4 p-4">
+        <p className="col-12 col-sm-12 col-md-4 p-4">
           Upriht Media provides the best VPS hosting in India and it has 3 USPs.
           It is simple, fast, reliable and economical.
-        </h5>
-        <h5 className="col-4 p-4">
+        </p>
+        <p className="col-12 col-sm-12 col-md-4 p-4">
           We will provide best linux VPS server which is built with advanced
           cloud-based infrastructure.
-        </h5>
-        <h5 className="col-4 p-4">
+        </p>
+        <p className="col-12 col-sm-12 col-md-4 p-4">
           Revamp your website with our fastest Linux VPS hosting in India. Our
           advanced features Online business of every size can add more cheese to
           their website.
-        </h5>
+        </p>
         <div>
           <h3>Completely Managed Linux VPS Hosting Server</h3>
           <p>
           Ready to make your dream of a mechanized India a reality? Our totally managed Linux VPS Server is designed to provide you with the best show and versatility, all while holding your monetary arrangement under close restrictions. With our on-demand support and 24/7 checking, you can trust us to manage all your web hosting necessities and assurance that your business moves along true to form. Contact us today and get ready to get the advantages of achievement!
           </p>
           <div className="row">
-            <div className="col-6 p-3">
-              <div className="border border-3 m-3">
+            <div className="col-12 col-sm-12 col-md-6 p-3">
+              <div className="border border-3 m-3 p-3">
               <h5>Reliable Linux Hosting Solutions</h5>
               <p>
               Get reliable Linux hosting solutions with maximum uptime and high performance. Our packages are designed to meet the needs of any business, from small websites to large enterprise applications. With top-notch security, scalability, and storage options, we make sure your business runs smoothly.
@@ -57,8 +57,8 @@ export default function LinuxVps() {
 
               
             </div>
-            <div className="col-6  p-3">
-              <div className="border border-3 m-3 h-20vh">
+            <div className="col-12 col-sm-12 col-md-6  p-3">
+              <div className="border border-3 m-3 h-20vh p-3">
 
               <h5>24/7 Technical Support</h5>
               <p>

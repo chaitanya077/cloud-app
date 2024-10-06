@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <div className="row my-5 ">
-        <div className="col-6">
+        <div className="col-12 col-sm-12 col-md-6  text-center text-md-start">
           <h3>Contact</h3>
           <div>
             <h5>
@@ -44,7 +44,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="col-6 text-center">
+        <div className="col-12 col-sm-12 col-md-6 text-center">
           <h3>About us</h3>
           <ul>
             <Link href={"/privacyPolicy"}>

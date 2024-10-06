@@ -84,19 +84,22 @@ export default function Home() {
     slidesToScroll: 1,
   };
   return (
-    <div>
+    <div className="">
       <div className={styles.container0}>
-        <div className={styles.item}>
+        <div className="row">
+          <div className="col-12 col-sm-12 col-md-6">
+
           <h1 className={styles.title}>
             Best Vps and Dedicated Service Provider.
           </h1>
           <p className={styles.desc}>
             We serve businesses of all sizes and sectors
           </p>
+          </div>
           {/* <Button url="/portfolio" text="See Our Works" /> */}
-        </div>
-        <div className={styles.item}>
+        <div className=" col-12 col-sm-12 col-md-6">
           <Image src={Hero} alt="" className={styles.img} />
+        </div>
         </div>
       </div>
       <div className="my-5">
@@ -108,10 +111,10 @@ export default function Home() {
           goals more quickly.
         </h5>
       </div>
-      <div className="row">
+      <div className="row align-items-center">
 
         {cardDesc.map((card) => (
-          <div className="col-4">
+          <div className=" col-12 col-sm-12 col-md-6 col-lg-4">
           <Card
             // key={""}
             image={card.image}
@@ -124,8 +127,8 @@ export default function Home() {
         ))}
       </div>
       <div className="row p-5">
-        <div className="col-1"></div>
-        <div className="col-4">
+        {/* <div className="col-1"></div> */}
+        <div className=" text-center text-md-start col-12  col-md-6 col-lg-4">
           <Image
             className="rounded rounded-3"
             src="/download.jpeg"
@@ -134,7 +137,7 @@ export default function Home() {
             height={300}
           />
         </div>
-        <div className="col-6">
+        <div className="col-12 text-center text-md-start col-md-6 col-lg-8">
           <h1>Accelerate your growth with AWS Activate</h1>
           <h5 className="pt-3">
             Benefits for Activate members transcend credit packages. Join now to
@@ -143,17 +146,20 @@ export default function Home() {
           </h5>
         </div>
       </div>
-      <div className="p-5 text-center">
+      <div className=" row text-center">
         <h1>Top Technology Partners choose Upright Media</h1>
         <p>World best cloud partner with us, together we make best solution</p>
-        <div className={styles.container1}>
+        <div className="row">
           {cardDesc2.map((card1) => (
+            <div className="col-12 col-sm-12 col-md-6 col-lg-4">
+
             <Card
               image={card1.image}
               title={card1.title}
               desc={card1.desc}
               url=""
-            />
+              />
+              </div>
           ))}
         </div>
       </div>
@@ -161,7 +167,7 @@ export default function Home() {
         <h1>Discover powerful services to boost your business</h1>
         <h4 className="mb-4">Checkout our main featured services</h4>
         <div className="row  d-flex justify-content-around">
-          <div className="row col-5 border border-5 p-3">
+          <div className="row  col-sm-12  col-lg-5 border border-5 p-3">
             <h1>IOT</h1>
             <p>
               Upright Media Providing a Proactive Solution that Keep on
@@ -172,7 +178,7 @@ export default function Home() {
             <a>Read Mode</a>
             <Image className="my-3" priority src={iotIcon} alt="iot icon" />
           </div>
-          <div className="row col-5 border border-5 p-3">
+          <div className="row mt-4 col-sm-12 col-lg-5  border border-5 p-3">
             <h1>Cyber Security</h1>
             <p>
               Upright Media Providing a Proactive Solution that Keep on

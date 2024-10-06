@@ -7,7 +7,7 @@ export default function LinuxDedicated() {
   return (
     <div>
       <div className="row">
-        <div className="col-6 pt-5 mt-3">
+        <div className="col-12 col-sm-12 col-md-6 pt-5 mt-3">
           <h1>Linux Dedicated Server</h1>
           <p>
           Get reliable and secure managed Windows dedicated server hosting in India
@@ -16,7 +16,7 @@ export default function LinuxDedicated() {
           Enjoy the benefits of high-performance servers at affordable prices.
           </p>
         </div>
-        <div className="col-6">
+        <div className="col-12 col-sm-12 col-md-6">
           <Image
             src={linuxVps}
             alt="linux vps image"
@@ -27,11 +27,11 @@ export default function LinuxDedicated() {
       </div>
       <div className="text-center row">
         <h3 className="mt-5">What We Focus on</h3>
-        <h5 className="col-6 p-4">
+        <h5 className="col-12 col-sm-12 col-md-6 p-4">
          
 Our Windows Dedicated Hosting is served with solid performance which is perfect for large websites and applications which need to handle more traffic at a single time.
         </h5>
-        <h5 className="col-6 p-4">
+        <h5 className="col-12 col-sm-12 col-md-6 p-4">
         Get the most out of your server with a Windows Dedicated Server. Windows Dedicated Servers gives you easy-to-use management tools that give you the power to manage and monitor your servers quickly and easily. With dedicated resources, you can enjoy fast speeds, reliable performance, and secure hosting all under one roof. Then get the dedicated hosting solution today!
         </h5>
         <div>
@@ -40,7 +40,7 @@ Our Windows Dedicated Hosting is served with solid performance which is perfect 
           Ready to make your dream of a mechanized India a reality? Our totally managed Linux VPS Server is designed to provide you with the best show and versatility, all while holding your monetary arrangement under close restrictions. With our on-demand support and 24/7 checking, you can trust us to manage all your web hosting necessities and assurance that your business moves along true to form. Contact us today and get ready to get the advantages of achievement!
           </p>
           <div className="row">
-            <div className="col-6 ">
+            <div className="col-12 col-sm-12 col-md-6">
               <div className="border border-3 m-3 p-2">
 
 
@@ -50,7 +50,7 @@ Our Windows Dedicated Hosting is served with solid performance which is perfect 
               </p>
             </div>
               </div>
-            <div className="col-6 ">
+            <div className="col-12 col-sm-12 col-md-6 ">
               <div className="border border-3 m-3 p-2">
 
               <h5>24/7 Technical Support</h5>

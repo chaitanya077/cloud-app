@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
-import styles from "./navbar.module.css";
+import "./navbar.module.css";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import { signOut, useSession } from "next-auth/react";
 import { Menu } from "@mui/material";
@@ -80,7 +80,7 @@ const awsLinks = [
 const emailLinks = [
   {
     title: "Microsoft Office 365",
-    url: "/microsoft",
+    url: "/microSoft",
   },
   {
     title: "Google Workspace",
@@ -112,6 +112,7 @@ const Navbar = () => {
   };
   const handleCloseBackup = () => {
     setAnchorEl2(null);
+    console.log("working")
   };
 
   const handleClickEmail = (event) => {
@@ -128,17 +129,22 @@ const Navbar = () => {
     setAnchorEl4(null);
   };
   return (
-    <div className={styles.container}>
-      <Link href="/" className={styles.logo}>
+
+    <div className="row my-2">
+      <div className="col-12 col-sm-12 col-md-2 align-items-center align-items-md-start ">
+        <div>
+      <Link href="/" className="">
       <Image
       src="/logo.png"
       width={150}
       height={60}
       alt="Main Pic"
-    />
+      />
         {/* Upright Media */}
       </Link>
-      <div className={styles.links}>
+      </div>
+      </div>
+      <div className=" col-12 col-sm-12 col-md-12 col-lg-10  d-flex flex-column  flex-sm-row flex-md-row justify-content-around my-3 align-items-center align-items-md-start">
         <DarkModeToggle />
         <div>
           <Button
@@ -148,7 +154,8 @@ const Navbar = () => {
             aria-expanded={open1 ? "true" : undefined}
             onClick={handleClickServer}
             sx={{color : "black"}}
-          >
+            className=""
+            >
             Server & Cloud
             <ExpandMoreIcon/>
           </Button>
@@ -166,7 +173,7 @@ const Navbar = () => {
 
           >
             {serverLinks.map((link) => (
-              <Link href={link.url} onClick={handleCloseBackup}  sx={{color : "black", textDecoration:"none"}}><MenuItem >{link.title}</MenuItem></Link>
+              <MenuItem onClick={()=> setAnchorEl1(null)} ><Link href={link.url}   sx={{color : "black", textDecoration:"none"}}>{link.title}</Link></MenuItem>
             ))}
           </Menu>
         </div>
@@ -179,7 +186,7 @@ const Navbar = () => {
             aria-expanded={open2 ? "true" : undefined}
             onClick={handleClickBackup}
             sx={{color : "black"}}
-          >
+            >
             Backup & Security
             <ExpandMoreIcon/>
           </Button>
@@ -197,7 +204,11 @@ const Navbar = () => {
 
           >
             {backupLinks.map((link) => (
-              <Link href={link.url}><MenuItem onClick={handleCloseBackup}  sx={{color : "black", textDecoration:"none"}}>{link.title}</MenuItem></Link>
+                <MenuItem onClick={handleCloseBackup}  sx={{color : "black", textDecoration:"none"}}>
+              <Link href={link.url}>
+                {link.title}
+                </Link>
+                </MenuItem>
             ))}
           </Menu>
         </div>
@@ -228,7 +239,11 @@ const Navbar = () => {
 
           >
             {emailLinks.map((link) => (
-              <Link href={link.url}><MenuItem onClick={handleCloseBackup}>{link.title}</MenuItem></Link>
+                <MenuItem onClick={handleCloseEmail}>
+              <Link href={link.url}>
+                {link.title}
+                </Link>
+                </MenuItem>
             ))}
           </Menu>
         </div>
@@ -242,8 +257,8 @@ const Navbar = () => {
             onClick={handleClickAws}
             sx={{color : "black"}}
           >
-AWS & Azure 
-<ExpandMoreIcon/>
+          AWS & Azure 
+          <ExpandMoreIcon/>
           </Button>
           <Menu
             id="fade-menu"
@@ -256,56 +271,20 @@ AWS & Azure
             onClose={handleCloseAws}
             TransitionComponent={Fade}
             sx={{color : "black", textDecoration:"none"}}
-          >
+            >
             {awsLinks.map((link) => (
-              <Link href={link.url}><MenuItem onClick={handleCloseBackup} sx={{color : "black"}}>{link.title}</MenuItem></Link>
+                <MenuItem onClick={handleCloseAws} sx={{color : "black"}}>
+              <Link href={link.url}>
+                {link.title}
+                </Link>
+                </MenuItem>
             ))}
           </Menu>
         </div>
         <div>
-          {/* <Button
-            id="fade-button"
-            aria-controls={open4 ? "fade-menu" : undefined}
-            aria-haspopup="true"
-            aria-expanded={open4 ? "true" : undefined}
-            onClick={handleClickAws}
-            sx={{color : "black"}}
-          >
-
-DevOps
-          </Button> */}
-                        {/* <Link href={"/devops"} sx={{color : "black"}}>DevOps</Link> */}
-
-          {/* <Menu
-            id="fade-menu"
-            MenuListProps={{
-              "aria-labelledby": "fade-button",
-            }}
-            anchorEl={anchorEl4}
-            open={open4}
-            onClose={handleCloseAws}
-            TransitionComponent={Fade}
-          >
-            {awsLinks.map((link) => (
-              <MenuItem onClick={handleCloseAws}>{link.title}</MenuItem>
-            ))}
-          </Menu> */}
-        </div>
-
-
-        {/* 
-        {links.map((link) => (
-          // <Link key={link.id} href={link.url} className={styles.link}>
-          //   {link.title}
-          // </Link>
-        ))} */}
-        {session.status === "authenticated" && (
-          <button className={styles.logout} onClick={signOut}>
-            Logout
-          </button>
-        )}
       </div>
     </div>
+        </div>
   );
 };
 
